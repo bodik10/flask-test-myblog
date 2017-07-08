@@ -1,3 +1,6 @@
+import sys
+sys.path.append("/app")
+
 from flask import Flask, render_template
 
 from testimportspam import *
@@ -10,9 +13,7 @@ def home():
 
 @app.route('/about/')
 def about():
-    with  open(r"test.txt") as f:
-        s = f.read()
-    return render_template('about.html', s = s)
+    return render_template('about.html', s = "asdasd")
 
 if __name__ == '__main__':
     app.run(debug=True)
