@@ -1,12 +1,12 @@
 from flask import Flask, render_template
 
-import test
+import testimportspam
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('home.html', my_var = test.my_var)
+    return render_template('home.html', my_var = testimportspam.my_var)
 
 @app.route('/about/')
 def about():
