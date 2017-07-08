@@ -1,1 +1,1 @@
-my_var = "SPAM"
+my_var = "SPAM2"
