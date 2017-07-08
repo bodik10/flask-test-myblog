@@ -1,5 +1,7 @@
 import sys
+sys.path.append("./app")
 sys.path.append("/app")
+sys.path.append("/app/app")
 
 from flask import Flask, render_template
 
