@@ -1,9 +1,5 @@
-"""
 import sys
-sys.path.append("./app")
-sys.path.append("/app")
-sys.path.append("/app/app")
-"""
+sys.path.append("/app/app") # !!! For gunicorn may import app modules correct 
 
 from flask import Flask, render_template
 
